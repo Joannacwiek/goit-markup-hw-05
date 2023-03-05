@@ -58,8 +58,16 @@
       <!--HERO-->
       <section class="hero hero-background">
           <h1 class="title-hero">EFEKTYWNE ROZWIĄZANIA </br>DLA WASZEGO BIZNESU</h1>
-          <button class="button-hero" type="button">Zamów usługę</button>
-      </section>
+          <button class="button-hero" type="button" data-modal-open>Zamów usługę</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+            <button class="button-hero" data-modal-close type="button">
+                <svg class="svg-hero" width="8" height="8">
+                    <path class="close" d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z" fill="black"/>
+                    </svg>
+                    </button>
+            </div>
+         </div></section>
       <!--Our Advantages SECTION-->
       <section class="section">
         <div class="container">
@@ -501,5 +509,6 @@
     </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
