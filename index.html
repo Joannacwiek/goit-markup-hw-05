@@ -21,30 +21,30 @@
     <!--HEADER-->
      <header class="container">
       <!--navigation-->
-      <div class="nav-container">
+      <div class="nav__container">
         <nav>
-          <ul class="nav-list">
+          <ul class="nav__list">
             <li>
-              <a class="header-logo" lang="en" href="index.html"
+              <a class="nav__logo" lang="en" href="index.html"
                 ><span class="highlight">Web</span>Studio</a
               >
             </li>
-            <li><a class="nav-link" href="./agencja.html">Agencja</a></li>
-            <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-            <li><a class="nav-link" href="./kontakt.html">Kontakt</a></li>
+            <li><a class="nav__link current" href="index.html">Agencja</a></li>
+            <li><a class="nav__link" href="portfolio.html">Portfolio</a></li>
+            <li><a class="nav__link" href="./kontakt.html">Kontakt</a></li>
           </ul>
         </nav>
         <!--address links-->
-        <ul class="nav-list">
-          <li class="contact-icon">
-            <a class="address-link" href="mailto:info@devstudio.com"
+        <ul class="nav__list">
+          <li class="contact__set">
+            <a class="contact__link" href="mailto:info@devstudio.com"
               ><svg width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a>
           </li>
-          <li class="contact-icon">
-            <a class="address-link" href="tel:+48 111 111 111"
+          <li class="contact__set">
+            <a class="contact__link" href="tel:+48 111 111 111"
               ><svg height="16" width="12">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -57,54 +57,47 @@
     <main>
       <!--HERO-->
       <section class="hero hero-background">
+        <div class="container">
           <h1 class="title-hero">EFEKTYWNE ROZWIĄZANIA </br>DLA WASZEGO BIZNESU</h1>
-          <button class="button-hero" type="button" data-modal-open>Zamów usługę</button>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-            <button class="button-hero" data-modal-close type="button">
-                <svg class="svg-hero" width="8" height="8">
-                    <path class="close" d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z" fill="black"/>
-                    </svg>
-                    </button>
-            </div>
-         </div></section>
+          <button class="button-hero modal-btn" type="button" data-modal-open> Zamów usługę </button></div>
+          </section>
       <!--Our Advantages SECTION-->
       <section class="section">
         <div class="container">
-          <ul class="advantages-list">
-            <li class="advantages-item">
+          <ul class="advantages__list">
+            <li class="advantages__item">
             <div class="icon-background">
                 <svg width="70">
                   <use href="./images/icons.svg#icon-antenna-1"></use>
                 </svg></div>
-              <h4 class="advantages-title">Lorem ipsum</h4>
-              <p class="advantages-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              <h4 class="advantages__title">Lorem ipsum</h4>
+              <p class="advantages__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada</p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages__item">
           <div class="icon-background">
                 <svg width="70">
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg></div>
-              <h4 class="advantages-title">Lorem ipsum</h4>
-              <p class="advantages-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              <h4 class="advantages__title">Lorem ipsum</h4>
+              <p class="advantages__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada</p>
-            </li><li class="advantages-item">
+            </li><li class="advantages__item">
           <div class="icon-background">
                 <svg width="70">
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg></div>
-              <h4 class="advantages-title">Lorem ipsum</h4>
-              <p class="advantages-description" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              <h4 class="advantages__title">Lorem ipsum</h4>
+              <p class="advantages__description" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada</p>
             </li>
-            <li class="advantages-item">
+            <li class="advantages__item">
             <div class="icon-background">
                 <svg width="70">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg></div>
-              <h4 class="advantages-title">Lorem ipsum</h4>
-              <p class="advantages-description" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+              <h4 class="advantages__title">Lorem ipsum</h4>
+              <p class="advantages__description" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada</p>
             </li>
           </ul>
@@ -112,37 +105,45 @@
         <!--WHAT WE DO SECTION-->
         <div class="section container">
           <h2 class="section-title">Czym się zajmujemy</h2>
-          <ul class="box">
-            <li>
+          <ul class="we-do__list">
+            <li class="we-do__item">
               <img
-                class="portfolio-tiles"
+                class="we-do__image"
                 src="images/we-do1.jpg"
                 alt="picture of a computer"
                 width="370"
                 height="294"
               />
+              <div class="we-do__overlay">
+                <p class="we-do__description">aplikacje komputerowe</p>
+              </div>
             </li>
-            <li>
+            <li class="we-do__item">
               <img
-                class="portfolio-tiles"
+                class="we-do__image"
                 src="images/we-do2.jpg"
                 alt="picture of a smartphone"
                 width="370"
                 height="294"
               />
+              <div class="we-do__overlay">
+                <p class="we-do__description">aplikacje mobilne</p>
+              </div>
             </li>
-            <li>
+            <li class="we-do__item">
               <img
-                class="portfolio-tiles"
+                class="we-do__image"
                 src="images/we-do3.jpg"
                 alt="picture of a tablet"
                 width="370"
                 height="294"
               />
+              <div class="we-do__overlay">
+                <p class="we-do__description">rozwiązania graficzne</p>
+              </div>
             </li>
           </ul>
         </div>
-      </section>
       <!--Our team-->
       <section class="section container-team">
         <div class="container">
@@ -474,7 +475,7 @@
           </ul>
         </address>
       </div>
-        <div>
+        <div class="footer-join">
           <h3 class="join-title">dołącz do nas</h3>
           <ul class="social-icons-footer">
             <li class="list-icons-footer">
@@ -506,10 +507,13 @@
               </a>
             </li>
           </ul>
-        </div>
     </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close> X </button></div>
+  </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
